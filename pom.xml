@@ -12,6 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -43,7 +45,6 @@
       <version>1.6.0</version>
       <scope>test</scope>
     </dependency>
-    
   </dependencies>
   <build>
     <plugins>
@@ -52,22 +53,7 @@
             <artifactId>spring-boot-maven-plugin</artifactId>
         </plugin>
     </plugins>
-</build>
+  </build>
+
 </project>
-<execution>
-    <phase>package</phase>
-    <goals>
-        <goal>copy</goal>
-    </goals>
-    <configuration>
-        <artifactItems>
-            <artifactItem>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-runner</artifactId>
-                <version>9.2.1.v20140609</version>
-                <destFileName>jetty-runner.jar</destFileName>
-            </artifactItem>
-        </artifactItems>
-    </configuration>
-</execution>
 

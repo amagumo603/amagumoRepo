@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar line-bot/build/libs/line-bot-*.jar --server.port=$PORT
+web: java $JAVA_OPTS -jar target/line-bot-*.jar --server.port=$PORT --spring.profiles.active=heroku 
