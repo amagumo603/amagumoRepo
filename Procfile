@@ -1,1 +1,1 @@
-web: java -jar target/*.jar --server.port=$PORT --spring.profiles.active=heroku 
+web: java $JAVA_OPTS -jar sample-spring-boot-echo/build/libs/sample-spring-boot-echo-*.jar --server.port=$PORT
